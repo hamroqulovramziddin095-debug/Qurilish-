@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qurilish Nazorati</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+  <div class="brand">🏗️ <div><b>Qurilish</b><span>Nazorati</span></div></div>
+  <div class="side-title">BLOKLAR</div>
+  <div id="blockButtons" class="blocks"></div>
+</div>
+
+<main>
+  <header>
+    <div>
+      <div class="eyebrow">QURILISH LOYIHASI</div>
+      <h1 id="pageTitle">1-blok</h1>
+      <p>Material va ish sarfini kiriting — foiz va summa avtomatik hisoblanadi.</p>
+    </div>
+    <button class="primary" onclick="addCustomTask()">＋ Yangi ish</button>
+  </header>
+
+  <section class="summary">
+    <div class="summary-card"><span>Blok bajarilishi</span><strong id="avgProgress">0%</strong><div class="mini-bar"><i id="avgBar"></i></div></div>
+    <div class="summary-card"><span>Jami sarflangan</span><strong id="totalSpent">0 so‘m</strong><small>material + uskuna + ish</small></div>
+    <div class="summary-card"><span>Materiallar</span><strong id="materialCount">0</strong><small>kiritilgan pozitsiya</small></div>
+    <div class="summary-card"><span>Tugagan ishlar</span><strong id="doneCount">0</strong><small>100% bajarilgan</small></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 id="tableTitle">1-blok — ishlar</h2>
+        <p>Foizni qo‘lda yozmaysiz. <b>Sarflangan miqdor ÷ reja miqdori × 100</b> orqali chiqadi.</p>
+      </div>
+      <div class="autosave">● Avtomatik saqlanadi</div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Ish turi</th>
+            <th>Material / uskuna</th>
+            <th>Reja miqdori</th>
+            <th>Sarflangan</th>
+            <th>Birlik</th>
+            <th>1 birlik narxi</th>
+            <th>Jami summa</th>
+            <th>Foiz</th>
+          </tr>
+        </thead>
+        <tbody id="taskTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
