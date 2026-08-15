@@ -1,143 +1,841 @@
-const sheet2Blocks = [{"id": 1, "name": "1-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 2, "name": "2-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 3, "name": "3-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 4, "name": "4-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 5, "name": "5-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 6, "name": "6-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 7, "name": "7-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 8, "name": "8-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 9, "name": "9-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 10, "name": "10-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 11, "name": "11-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 12, "name": "12-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 13, "name": "13-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 14, "name": "14-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 15, "name": "15-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 16, "name": "16-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}, {"id": 17, "name": "17-блок", "tasks": [{"name": "катлаван", "excelRef": 0}, {"name": "бетон подгатовка", "excelRef": 0}, {"name": "изалатсия гаризантал", "excelRef": 0}, {"name": "изалатсия вертикал", "excelRef": 0}, {"name": "подушка", "excelRef": 0}, {"name": "подвал моналит бетон", "excelRef": 0}, {"name": "1-этаж моналит бетон", "excelRef": 0}, {"name": "2-этаж моналит бетон", "excelRef": 0}, {"name": "3-этаж моналит бетон", "excelRef": 0}, {"name": "4-этаж моналит бетон", "excelRef": 0}, {"name": "5-этаж моналит бетон", "excelRef": 0}, {"name": "6-этаж моналит бетон", "excelRef": 0}, {"name": "7-этаж моналит бетон", "excelRef": 0}, {"name": "8-этаж моналит бетон", "excelRef": 0}, {"name": "подвал метал сердечник", "excelRef": 0}, {"name": "подвал газаблок", "excelRef": 0}, {"name": "1-этаж метал сердечник", "excelRef": 0}, {"name": "1-этаж газаблок", "excelRef": 0}, {"name": "2-этаж метал сердечник", "excelRef": 0}, {"name": "2-этаж газаблок", "excelRef": 0}, {"name": "3-этаж метал сердечник", "excelRef": 0}, {"name": "3-этаж газаблок", "excelRef": 0}, {"name": "4-этаж метал сердечник", "excelRef": 0}, {"name": "4-этаж газаблок", "excelRef": 0}, {"name": "5-этаж метал сердечник", "excelRef": 0}, {"name": "5-этаж газаблок", "excelRef": 0}, {"name": "6-этаж метал сердечник", "excelRef": 0}, {"name": "6-этаж газаблок", "excelRef": 0}, {"name": "7-этаж метал сердечник", "excelRef": 0}, {"name": "7-этаж газаблок", "excelRef": 0}, {"name": "8-этаж метал сердечник", "excelRef": 0}, {"name": "8-этаж газаблок", "excelRef": 0}, {"name": "подвал электрика", "excelRef": 0}, {"name": "1-этаж электрика", "excelRef": 0}, {"name": "2-этаж электрика", "excelRef": 0}, {"name": "3-этаж электрика", "excelRef": 0}, {"name": "4-этаж электрика", "excelRef": 0}, {"name": "5-этаж электрика", "excelRef": 0}, {"name": "6-этаж электрика", "excelRef": 0}, {"name": "7-этаж электрика", "excelRef": 0}, {"name": "8-этаж электрика", "excelRef": 0}, {"name": "подвал стаяшка пол", "excelRef": 0}, {"name": "1-этаж стаяшка", "excelRef": 0}, {"name": "2-этаж стаяшка", "excelRef": 0}, {"name": "3-этаж стаяшка", "excelRef": 0}, {"name": "4-этаж стаяшка", "excelRef": 0}, {"name": "5-этаж стаяшка", "excelRef": 0}, {"name": "6-этаж стаяшка", "excelRef": 0}, {"name": "7-этаж стаяшка", "excelRef": 0}, {"name": "8-этаж стаяшка", "excelRef": 0}, {"name": "подвал родман", "excelRef": 0}, {"name": "1-этаж родман", "excelRef": 0}, {"name": "2-этаж родман", "excelRef": 0}, {"name": "3-этаж родман", "excelRef": 0}, {"name": "4-этаж родман", "excelRef": 0}, {"name": "5-этаж родман", "excelRef": 0}, {"name": "6-этаж родман", "excelRef": 0}, {"name": "7-этаж родман", "excelRef": 0}, {"name": "8-этаж родман", "excelRef": 0}, {"name": "подвал шпакиловка", "excelRef": 0}, {"name": "1-этаж шпакиловка", "excelRef": 0}, {"name": "2-этаж шпакиловка", "excelRef": 0}, {"name": "3-этаж шпакиловка", "excelRef": 0}, {"name": "4-этаж шпакиловка", "excelRef": 0}, {"name": "5-этаж шпакиловка", "excelRef": 0}, {"name": "6-этаж шпакиловка", "excelRef": 0}, {"name": "7-этаж шпакиловка", "excelRef": 0}, {"name": "8-этаж шпакиловка", "excelRef": 0}, {"name": "подвал кафел", "excelRef": 0}, {"name": "1-этаж кафел", "excelRef": 0}, {"name": "2-этаж кафел", "excelRef": 0}, {"name": "3-этаж кафел", "excelRef": 0}, {"name": "4-этаж кафел", "excelRef": 0}, {"name": "5-этаж кафел", "excelRef": 0}, {"name": "6-этаж кафел", "excelRef": 0}, {"name": "7-этаж кафел", "excelRef": 0}, {"name": "8-этаж кафел", "excelRef": 0}, {"name": "снтехника", "excelRef": 0}, {"name": "винтилаця", "excelRef": 0}, {"name": "акфа ром", "excelRef": 0}, {"name": "эшик", "excelRef": 0}, {"name": "фасад", "excelRef": 0}, {"name": "перилла лесинса", "excelRef": 0}, {"name": "перилла балкон", "excelRef": 0}, {"name": "ташки сув ишлари", "excelRef": 0}, {"name": "ташки канализация", "excelRef": 0}, {"name": "ташки электрика", "excelRef": 0}, {"name": "палиф", "excelRef": 0}, {"name": "том ишлари", "excelRef": 0}, {"name": "благасройства", "excelRef": 0}]}];
-let currentBlock = 1;
+// ==========================================
+// SUPABASE
+// ==========================================
 
-function key(blockId) {
-  return "qurilish_block_" + blockId;
+const SUPABASE_URL =
+    "https://fbjfjphvealwxaveoeyx.supabase.co";
+
+const SUPABASE_KEY =
+    "sb_publishable_cpoQQu4uJ8KHE-wNHA7gbA_AJbHME__";
+
+
+// ADMIN EMAIL
+
+const ADMIN_EMAIL =
+    "hamroqulovramziddin095@gmail.com";
+
+
+const db =
+    supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+
+// ==========================================
+// O'ZGARUVCHILAR
+// ==========================================
+
+let user = null;
+
+let isAdmin = false;
+
+let currentBlock = 2;
+
+let items = [];
+
+let realtimeChannel = null;
+
+
+// ==========================================
+// YORDAMCHI FUNKSIYALAR
+// ==========================================
+
+function money(number) {
+
+    return new Intl.NumberFormat("uz-UZ")
+        .format(
+            Math.round(Number(number) || 0)
+        )
+        + " so‘m";
 }
 
-function getSaved(blockId) {
-  try {
-    return JSON.parse(localStorage.getItem(key(blockId)) || "null");
-  } catch(e) { return null; }
+
+function escapeHTML(value) {
+
+    return String(value ?? "")
+        .replace(/[&<>"']/g, function (char) {
+
+            const map = {
+
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;"
+
+            };
+
+            return map[char];
+
+        });
+
 }
 
-function saveBlock(blockId, rows) {
-  localStorage.setItem(key(blockId), JSON.stringify(rows));
-  showToast("Saqlandi ✓");
+
+function getPercent(row) {
+
+    const planned =
+        Number(row.planned) || 0;
+
+    const used =
+        Number(row.used) || 0;
+
+    if (planned <= 0) {
+
+        return 0;
+
+    }
+
+    return Math.max(
+        0,
+        Math.min(
+            100,
+            used / planned * 100
+        )
+    );
 }
 
-function getRows(blockId) {
-  const saved = getSaved(blockId);
-  const block = sheet2Blocks.find(b => b.id === blockId);
-  if (saved) return saved;
-  return (block?.tasks || []).map((t, i) => ({
-    id: i + 1,
-    name: t.name,
-    planned: 0,
-    used: 0,
-    unit: "m³",
-    price: 0,
-    material: "",
-    excelRef: t.excelRef
-  }));
+
+function getTotal(row) {
+
+    const used =
+        Number(row.used) || 0;
+
+    const price =
+        Number(row.price) || 0;
+
+    return used * price;
 }
 
-function progress(row) {
-  if (!Number(row.planned) || Number(row.planned) <= 0) return 0;
-  return Math.max(0, Math.min(100, (Number(row.used || 0) / Number(row.planned)) * 100));
+
+// ==========================================
+// LOGIN MODE
+// ==========================================
+
+function registerMode() {
+
+    document.getElementById("authTitle")
+        .textContent = "Ro‘yxatdan o‘tish";
+
+    document.getElementById("authBtn")
+        .textContent = "Ro‘yxatdan o‘tish";
+
+    document.getElementById("authBtn")
+        .onclick = register;
+
+    document.getElementById("switch")
+        .textContent = "Kirish";
+
+    document.getElementById("switch")
+        .onclick = loginMode;
+
+    document.getElementById("err")
+        .textContent = "";
 }
 
-function money(n) {
-  return new Intl.NumberFormat("uz-UZ").format(Math.round(Number(n) || 0)) + " so‘m";
+
+function loginMode() {
+
+    document.getElementById("authTitle")
+        .textContent = "Kirish";
+
+    document.getElementById("authBtn")
+        .textContent = "Kirish";
+
+    document.getElementById("authBtn")
+        .onclick = login;
+
+    document.getElementById("switch")
+        .textContent = "Ro‘yxatdan o‘tish";
+
+    document.getElementById("switch")
+        .onclick = registerMode;
+
+    document.getElementById("err")
+        .textContent = "";
 }
 
-function renderBlocks() {
-  const box = document.getElementById("blockButtons");
-  box.innerHTML = "";
-  sheet2Blocks.forEach(b => {
-    const btn = document.createElement("button");
-    btn.className = "block-btn" + (b.id === currentBlock ? " active" : "");
-    btn.textContent = b.id + "-blok";
-    btn.onclick = () => { currentBlock = b.id; renderBlocks(); renderTable(); };
-    box.appendChild(btn);
-  });
+
+// ==========================================
+// LOGIN
+// ==========================================
+
+async function login() {
+
+    const email =
+        document.getElementById("email")
+            .value
+            .trim();
+
+    const password =
+        document.getElementById("pass")
+            .value;
+
+
+    if (!email || !password) {
+
+        document.getElementById("err")
+            .textContent =
+            "Email va parolni kiriting.";
+
+        return;
+    }
+
+
+    const result =
+        await db.auth.signInWithPassword({
+
+            email: email,
+
+            password: password
+
+        });
+
+
+    if (result.error) {
+
+        document.getElementById("err")
+            .textContent =
+            result.error.message;
+
+        return;
+    }
+
+
+    startUser(result.data.user);
 }
+
+
+// ==========================================
+// RO'YXATDAN O'TISH
+// ==========================================
+
+async function register() {
+
+    const email =
+        document.getElementById("email")
+            .value
+            .trim();
+
+    const password =
+        document.getElementById("pass")
+            .value;
+
+
+    if (password.length < 6) {
+
+        document.getElementById("err")
+            .textContent =
+            "Parol kamida 6 ta belgidan iborat bo‘lsin.";
+
+        return;
+    }
+
+
+    const result =
+        await db.auth.signUp({
+
+            email: email,
+
+            password: password
+
+        });
+
+
+    if (result.error) {
+
+        document.getElementById("err")
+            .textContent =
+            result.error.message;
+
+        return;
+    }
+
+
+    if (result.data.session) {
+
+        startUser(result.data.user);
+
+    } else {
+
+        document.getElementById("err")
+            .textContent =
+            "Ro‘yxatdan o‘tish muvaffaqiyatli. Emailingizni tasdiqlang, keyin kiring.";
+
+    }
+}
+
+
+// ==========================================
+// CHIQISH
+// ==========================================
+
+async function logout() {
+
+    await db.auth.signOut();
+
+    location.reload();
+
+}
+
+
+// ==========================================
+// FOYDALANUVCHINI ANIQLASH
+// ==========================================
+
+function startUser(currentUser) {
+
+    user = currentUser;
+
+
+    isAdmin =
+        (user.email || "")
+            .toLowerCase()
+        ===
+        ADMIN_EMAIL.toLowerCase();
+
+
+    document.getElementById("auth")
+        .style.display = "none";
+
+
+    createBlocks();
+
+    loadData();
+
+    startRealtime();
+
+}
+
+
+// ==========================================
+// BLOKLAR
+// ==========================================
+
+function createBlocks() {
+
+    const container =
+        document.getElementById("blocks");
+
+    container.innerHTML = "";
+
+
+    for (
+        let number = 1;
+        number <= 17;
+        number++
+    ) {
+
+        const button =
+            document.createElement("button");
+
+
+        button.textContent =
+            number + "-blok";
+
+
+        if (number === currentBlock) {
+
+            button.classList.add("active");
+
+        }
+
+
+        button.onclick = function () {
+
+            currentBlock = number;
+
+            createBlocks();
+
+            loadData();
+
+        };
+
+
+        container.appendChild(button);
+
+    }
+
+}
+
+
+// ==========================================
+// MA'LUMOTLARNI YUKLASH
+// ==========================================
+
+async function loadData() {
+
+    document.getElementById("status")
+        .textContent =
+        "Yuklanmoqda...";
+
+
+    const result =
+        await db
+            .from("construction_items")
+            .select("*")
+            .eq("block_id", currentBlock)
+            .order("id");
+
+
+    if (result.error) {
+
+        document.getElementById("status")
+            .textContent =
+            "Xatolik";
+
+        document.getElementById("table")
+            .innerHTML =
+            `<tr>
+                <td colspan="9">
+                    ${escapeHTML(result.error.message)}
+                </td>
+            </tr>`;
+
+        return;
+    }
+
+
+    items =
+        result.data || [];
+
+
+    renderTable();
+
+
+    document.getElementById("status")
+        .textContent =
+        isAdmin
+            ? "Admin ✓"
+            : "Faqat ko‘rish ✓";
+
+
+    document.getElementById("title")
+        .textContent =
+        currentBlock + "-blok";
+
+
+    document.getElementById("head")
+        .textContent =
+        currentBlock + "-blok — Ishlar";
+
+}
+
+
+// ==========================================
+// JADVALNI CHIZISH
+// ==========================================
 
 function renderTable() {
-  const block = sheet2Blocks.find(b => b.id === currentBlock);
-  const rows = getRows(currentBlock);
-  document.getElementById("pageTitle").textContent = block.name;
-  document.getElementById("tableTitle").textContent = block.name + " — ishlar";
 
-  const tbody = document.getElementById("taskTable");
-  tbody.innerHTML = "";
+    const table =
+        document.getElementById("table");
 
-  rows.forEach((r, idx) => {
-    const p = progress(r);
-    const sum = Number(r.used || 0) * Number(r.price || 0);
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td class="task-name">${escapeHtml(r.name)}</td>
-      <td><input class="input" value="${escapeAttr(r.material)}" placeholder="Masalan: Beton M300" onchange="editRow(${idx},'material',this.value)"></td>
-      <td><input class="input" type="number" min="0" step="0.01" value="${r.planned}" onchange="editRow(${idx},'planned',this.value)"></td>
-      <td><input class="input" type="number" min="0" step="0.01" value="${r.used}" onchange="editRow(${idx},'used',this.value)"></td>
-      <td><input class="input" value="${escapeAttr(r.unit)}" placeholder="m³ / kg / dona" onchange="editRow(${idx},'unit',this.value)"></td>
-      <td><input class="input" type="number" min="0" step="1" value="${r.price}" onchange="editRow(${idx},'price',this.value)"></td>
-      <td><input class="input" type="number" min="0" step="1" value="${r.price}" onchange="editRow(${idx},'price',this.value)"></td>
-      <td class="money">${money(sum)}</td>
-      <td class="progress-cell">
-        <div class="p-row"><div class="bar"><div class="fill" style="width:${p}%"></div></div><div class="pct">${p.toFixed(0)}%</div></div>
-        <div class="status ${p >= 100 ? 'done' : ''}">${p >= 100 ? '✓ Tugagan' : p > 0 ? 'Jarayonda' : 'Boshlanmagan'}</div>
-      </td>
-    `;
-    tbody.appendChild(tr);
-  });
 
-  updateSummary(rows);
+    table.innerHTML = "";
+
+
+    items.forEach(function (row, index) {
+
+        const percent =
+            getPercent(row);
+
+
+        let material;
+
+        let planned;
+
+        let used;
+
+        let unit;
+
+        let price;
+
+
+        if (isAdmin) {
+
+            material =
+                `<input
+                    class="cell"
+                    data-index="${index}"
+                    data-field="material"
+                    value="${escapeHTML(row.material || "")}"
+                >`;
+
+
+            planned =
+                `<input
+                    class="cell"
+                    type="number"
+                    data-index="${index}"
+                    data-field="planned"
+                    value="${Number(row.planned) || 0}"
+                >`;
+
+
+            used =
+                `<input
+                    class="cell"
+                    type="number"
+                    data-index="${index}"
+                    data-field="used"
+                    value="${Number(row.used) || 0}"
+                >`;
+
+
+            unit =
+                `<input
+                    class="cell"
+                    data-index="${index}"
+                    data-field="unit"
+                    value="${escapeHTML(row.unit || "")}"
+                >`;
+
+
+            price =
+                `<input
+                    class="cell"
+                    type="number"
+                    data-index="${index}"
+                    data-field="price"
+                    value="${Number(row.price) || 0}"
+                >`;
+
+        } else {
+
+            material =
+                escapeHTML(row.material || "");
+
+            planned =
+                Number(row.planned) || 0;
+
+            used =
+                Number(row.used) || 0;
+
+            unit =
+                escapeHTML(row.unit || "");
+
+            price =
+                money(row.price);
+
+        }
+
+
+        const tr =
+            document.createElement("tr");
+
+
+        tr.innerHTML = `
+
+            <td>${index + 1}</td>
+
+            <td>
+                <b>
+                    ${escapeHTML(row.name)}
+                </b>
+            </td>
+
+            <td>
+                ${material}
+            </td>
+
+            <td>
+                ${planned}
+            </td>
+
+            <td>
+                ${used}
+            </td>
+
+            <td>
+                ${unit}
+            </td>
+
+            <td>
+                ${price}
+            </td>
+
+            <td class="money">
+                ${money(getTotal(row))}
+            </td>
+
+            <td>
+
+                <b>
+                    ${percent.toFixed(0)}%
+                </b>
+
+                <div class="bar">
+
+                    <div
+                        class="fill"
+                        style="width:${percent}%"
+                    ></div>
+
+                </div>
+
+            </td>
+
+        `;
+
+
+        table.appendChild(tr);
+
+    });
+
+
+    if (isAdmin) {
+
+        document
+            .querySelectorAll(".cell")
+            .forEach(function (input) {
+
+                input.addEventListener(
+                    "change",
+                    saveData
+                );
+
+            });
+
+    }
+
+
+    updateStatistics();
+
 }
 
-function editRow(idx, field, value) {
-  const rows = getRows(currentBlock);
-  if (["planned","used","price"].includes(field)) value = Number(value) || 0;
-  rows[idx][field] = value;
-  saveBlock(currentBlock, rows);
-  renderTable();
+
+// ==========================================
+// MA'LUMOTNI SAQLASH
+// ==========================================
+
+async function saveData(event) {
+
+    if (!isAdmin) {
+
+        return;
+
+    }
+
+
+    const input =
+        event.target;
+
+
+    const index =
+        Number(input.dataset.index);
+
+
+    const field =
+        input.dataset.field;
+
+
+    let value =
+        input.value;
+
+
+    if (
+        field === "planned" ||
+        field === "used" ||
+        field === "price"
+    ) {
+
+        value =
+            Number(value) || 0;
+
+    }
+
+
+    items[index][field] =
+        value;
+
+
+    const row =
+        items[index];
+
+
+    const result =
+        await db
+            .from("construction_items")
+            .update({
+
+                material:
+                    row.material || "",
+
+                planned:
+                    Number(row.planned) || 0,
+
+                used:
+                    Number(row.used) || 0,
+
+                unit:
+                    row.unit || "",
+
+                price:
+                    Number(row.price) || 0,
+
+                updated_at:
+                    new Date().toISOString()
+
+            })
+            .eq("id", row.id);
+
+
+    if (result.error) {
+
+        alert(
+            "Saqlash xatosi: "
+            + result.error.message
+        );
+
+        return;
+
+    }
+
+
+    renderTable();
+
 }
 
-function addCustomTask() {
-  const name = prompt("Ish nomi:");
-  if (!name) return;
-  const rows = getRows(currentBlock);
-  rows.push({
-    id: Date.now(),
-    name: name,
-    planned: 0,
-    used: 0,
-    unit: "dona",
-    price: 0,
-    material: "",
-    excelRef: 0
-  });
-  saveBlock(currentBlock, rows);
-  renderTable();
+
+// ==========================================
+// STATISTIKA
+// ==========================================
+
+function updateStatistics() {
+
+    const count =
+        items.length;
+
+
+    const average =
+        count
+            ? items.reduce(
+                function (total, row) {
+
+                    return total +
+                        getPercent(row);
+
+                },
+                0
+            ) / count
+            : 0;
+
+
+    const sum =
+        items.reduce(
+            function (total, row) {
+
+                return total +
+                    getTotal(row);
+
+            },
+            0
+        );
+
+
+    const done =
+        items.filter(
+            function (row) {
+
+                return getPercent(row) >= 100;
+
+            }
+        ).length;
+
+
+    document.getElementById("avg")
+        .textContent =
+        average.toFixed(0) + "%";
+
+
+    document.getElementById("sum")
+        .textContent =
+        money(sum);
+
+
+    document.getElementById("count")
+        .textContent =
+        count;
+
+
+    document.getElementById("done")
+        .textContent =
+        done;
+
 }
 
-function updateSummary(rows) {
-  const avg = rows.length ? rows.reduce((a,r) => a + progress(r), 0) / rows.length : 0;
-  const spent = rows.reduce((a,r) => a + Number(r.used || 0) * Number(r.price || 0), 0);
-  const materials = rows.filter(r => String(r.material || "").trim() || Number(r.used || 0) > 0).length;
-  const done = rows.filter(r => progress(r) >= 100).length;
 
-  document.getElementById("avgProgress").textContent = avg.toFixed(0) + "%";
-  document.getElementById("avgBar").style.width = avg + "%";
-  document.getElementById("totalSpent").textContent = money(spent);
-  document.getElementById("materialCount").textContent = materials;
-  document.getElementById("doneCount").textContent = done;
+// ==========================================
+// REALTIME
+// ==========================================
+
+function startRealtime() {
+
+    if (realtimeChannel) {
+
+        db.removeChannel(
+            realtimeChannel
+        );
+
+    }
+
+
+    realtimeChannel =
+        db
+            .channel("construction-live")
+
+            .on(
+                "postgres_changes",
+                {
+                    event: "*",
+                    schema: "public",
+                    table: "construction_items"
+                },
+
+                function (payload) {
+
+                    const newBlock =
+                        payload.new
+                            ?.block_id;
+
+                    const oldBlock =
+                        payload.old
+                            ?.block_id;
+
+
+                    if (
+                        newBlock === currentBlock ||
+                        oldBlock === currentBlock
+                    ) {
+
+                        loadData();
+
+                    }
+
+                }
+
+            )
+
+            .subscribe();
+
 }
 
-function escapeHtml(s) {
-  return String(s ?? "").replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-}
-function escapeAttr(s) { return escapeHtml(s); }
 
-let toastTimer;
-function showToast(text) {
-  const t = document.getElementById("toast");
-  t.textContent = text;
-  t.classList.add("show");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => t.classList.remove("show"), 900);
-}
+// ==========================================
+// SAYT OCHILGANDA USERNI TEKSHIRISH
+// ==========================================
 
-renderBlocks();
-renderTable();
+db.auth.getUser()
+    .then(function (result) {
+
+        if (result.data.user) {
+
+            startUser(
+                result.data.user
+            );
+
+        }
+
+    });
